@@ -1,0 +1,19 @@
+{
+  "name": "testcafe-repro-screenshot-mark-macos-14",
+  "version": "1.0.0",
+  "description": "",
+  "main": "screenshot.tc.ts",
+  "scripts": {
+    "test": "testcafe chrome screenshot.tc.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/htho/testcafe-repro-screenshot-mark-macos-14.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "homepage": "https://github.com/htho/testcafe-repro-screenshot-mark-macos-14#readme",
+  "dependencies": {
+    "testcafe": "^3.5.0"
+  }
+}
