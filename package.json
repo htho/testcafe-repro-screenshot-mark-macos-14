@@ -4,7 +4,7 @@
   "description": "",
   "main": "screenshot.tc.ts",
   "scripts": {
-    "test": "testcafe chrome screenshot.tc.ts"
+    "test": "testcafe safari screenshot.tc.ts"
   },
   "repository": {
     "type": "git",
