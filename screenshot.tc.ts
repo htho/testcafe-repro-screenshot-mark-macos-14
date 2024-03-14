@@ -9,6 +9,7 @@ fixture("screenshot")
     .page("about:blank");
 
 test("screenshot", async t => {
+    await t.eval(() => document.body.style.backgroundColor = "#dde")
     await t.resizeWindow(640, 480);
     await t.takeScreenshot(mkValidPath(`${t.browser.alias}--${t.test.name}`));
 });
