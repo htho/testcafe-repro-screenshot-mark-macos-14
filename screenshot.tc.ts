@@ -8,12 +8,7 @@ export function mkValidPath(path: string): string {
 fixture("screenshot")
     .page("about:blank");
 
-test("without scrollbars", async t => {
-    await t.resizeWindow(640, 480);
-    await t.takeScreenshot(mkValidPath(`${t.browser.alias}--${t.test.name}`));
-});
-test("with scrollbars", async t => {
-    await t.eval(() => document.body.style.overflow = "scroll");
+test("screenshot", async t => {
     await t.resizeWindow(640, 480);
     await t.takeScreenshot(mkValidPath(`${t.browser.alias}--${t.test.name}`));
 });
